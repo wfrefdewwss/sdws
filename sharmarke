@@ -1,0 +1,52 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local on = Instance.new("TextButton")
+local resetcharacter = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame.Position = UDim2.new(0.714154422, 0, 0.391304344, 0)
+Frame.Size = UDim2.new(0, 224, 0, 239)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel.Size = UDim2.new(0, 224, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Universal Floating Flinger FE"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 18.000
+
+on.Name = "on"
+on.Parent = Frame
+on.BackgroundColor3 = Color3.fromRGB(231, 255, 240)
+on.Position = UDim2.new(0.0937500075, 0, 0.310336411, 0)
+on.Size = UDim2.new(0, 166, 0, 50)
+on.Font = Enum.Font.SourceSans
+on.Text = "Transform"
+on.TextColor3 = Color3.fromRGB(0, 0, 0)
+on.TextSize = 36.000
+on.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/fffe", true))()
+end)
+
+resetcharacter.Name = "reset character"
+resetcharacter.Parent = Frame
+resetcharacter.BackgroundColor3 = Color3.fromRGB(217, 239, 225)
+resetcharacter.Position = UDim2.new(0.0937500075, 0, 0.695273638, 0)
+resetcharacter.Size = UDim2.new(0, 166, 0, 50)
+resetcharacter.Font = Enum.Font.SourceSans
+resetcharacter.Text = "reset character"
+resetcharacter.TextColor3 = Color3.fromRGB(0, 0, 0)
+resetcharacter.TextSize = 27.000
+resetcharacter.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health
+		= 0
+end)
