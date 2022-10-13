@@ -47,6 +47,5 @@ resetcharacter.Text = "you can turn it off when you reset character"
 resetcharacter.TextColor3 = Color3.fromRGB(0, 0, 0)
 resetcharacter.TextSize = 27.000
 resetcharacter.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.Humanoid.Health
 		
 end)
