@@ -43,10 +43,10 @@ resetcharacter.BackgroundColor3 = Color3.fromRGB(217, 239, 225)
 resetcharacter.Position = UDim2.new(0.0937500075, 0, 0.695273638, 0)
 resetcharacter.Size = UDim2.new(0, 166, 0, 50)
 resetcharacter.Font = Enum.Font.SourceSans
-resetcharacter.Text = "reset character"
+resetcharacter.Text = "you can turn it off when you reset character"
 resetcharacter.TextColor3 = Color3.fromRGB(0, 0, 0)
 resetcharacter.TextSize = 27.000
 resetcharacter.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Character.Humanoid.Health
-		= 0
+		
 end)
